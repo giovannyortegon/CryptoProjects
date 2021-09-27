@@ -122,14 +122,16 @@ int main()
 
 				for (int i = 0; i < input.size(); i++)
 				{
-					if ((!(input[i] > 'a' && input[i] < = 'z')) &&
-					    (!(input[i] > 'A' && input[i] <= 'Z'))) throw
-						"Incorrect string";
+					if ((!(input[i] >= 'a' && input[i] <= 'z')) &&
+						(!(input[i] >= 'A' && input[i] <= 'Z')))
+					{
+						throw "Incorrect string";
+					}
 				}
 			}
 			catch (const char * str)
 			{
-				cerr <<"Your string may have digits or special symbols!!!"
+				cerr <<"Your string may have digits or special symbols!!!";
 				cout <<endl;
 				cerr <<"Please put only alphabets!!!" <<endl;
 				return (1);
