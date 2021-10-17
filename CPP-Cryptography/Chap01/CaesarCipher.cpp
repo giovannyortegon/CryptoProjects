@@ -97,7 +97,6 @@ int main()
 				// encryption and decryption takes place
 				output += caesar(input[x], key);
 			}
-
 			cout <<output <<endl;
 			output.clear();
 		}
